@@ -11,14 +11,54 @@
                 font-family: Courier;
                 
             }
+            p.target{
+                direction: rtl;
+                unicode-bidi: isolate;
+            }
             h1{
                 background: tomato;
                 color: aqua;
-                border: 5px dotted violet;
+                border: 5px dottedSSS violet;
             }
            .boy {
                 color: red;
                 text-align: center;
+            }
+            a:link, a:visited{
+                background-color: red;
+                color: white;
+                padding: 10px;
+                margin: auto;
+                border: 5px solid green;
+                text-decoration: none;
+                text-align: center;
+                letter-spacing: -2px;
+                
+            }
+            a:hover, a:active{
+                background-color: black;
+                color: yellow;
+                text-decoration: underline;
+            }
+            ol{
+                background-color: red;
+                margin: 0;
+                padding: 20px;
+            }
+            ol li{
+                background-color: blue;
+                margin-left: 35px;
+                padding: 5px;
+                color: white;
+
+            }
+            ul{
+                background-color: green;
+                margin-left: 0;
+                border-left: 5px solid black;
+                color: violet;
+                list-style-type: none;
+                padding: -10px;
             }
         </style>
         <script>
@@ -32,12 +72,31 @@
         <p class="big boy"><i> is the best platform to master your coding</i></p>
         <hr>
         <p id="affect">this is the only affected paragraph</p>
-        <pre style="text-align: center;">
+        <p class= 'target'>
             the boy is tall
             he is dark in complexion
             he is a nigerian
-        </pre>
+        </p>
         <button type="button" onclick="myFunction()">click me</button>
         <img id="light" src="pic_bulboff.gif" alt="a bulb with the light turned off" style="width: 100px;">
+        <a href="">this is a link</a>
+        <p>move the mouse to see changes in the cursor</p>
+        <span style="cursor: auto;">auto</span><br>
+        <span style="cursor: crosshair;">crosshair</span><br>
+        <span style="cursor: e-resize;">e-resize</span><br>
+        <span style="cursor: default;">default</span><br>
+        <span style="cursor: help;">help</span><br>
+        <span style="cursor: move;">move</span>
+        <ol>
+            <li>coffee</li>
+            <li>cocoa</li>
+            <li>beverage</li>
+        </ol>
+        <ul>
+            <li>bowl</li>
+            <li>bucket</li>
+            <li>spoon</li>
+        </ul>
         <script>document.getElementById('affect').innerHTML = 'my first javascript'</script>
+    </body>
 </html>
