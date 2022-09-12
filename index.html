@@ -60,6 +60,25 @@
                 list-style-type: none;
                 padding: -10px;
             }
+            #love{
+                display: none;
+            }
+            div.gate{
+                border: 5px solid yellow;
+                position: relative;
+                width: 400px;
+                height: 200px;
+                color: blue;
+            }
+            div.door{
+                border: 5px solid tomato;
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                color: blue;
+            }
         </style>
         <script>
             function myFunction(){
@@ -72,7 +91,9 @@
         <p class="big boy"><i> is the best platform to master your coding</i></p>
         <hr>
         <p id="affect">this is the only affected paragraph</p>
-        <p class= 'target'>
+       
+
+        <p class='target'>
             the boy is tall
             he is dark in complexion
             he is a nigerian
@@ -97,6 +118,47 @@
             <li>bucket</li>
             <li>spoon</li>
         </ul>
+        <p class="flip" onclick="myFunction()">click panel to view files</p>
+        <div id="love"> 
+            <p>this is inside the panel</p>
+            <p>this ia also inside the panel</p>
+            <p>and also this</p>
+        </div>
+        <div class="gate">
+            this element has a relative position
+            <div class="door">this element has an absolute position</div>
+        </div>
+        <style>
+            div.clearfix{
+                box-sizing: border-box;
+            }
+            .img-container{
+                float: left;
+                width: 33.3%;
+                padding: 5px;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+        <div class="clearfix">
+            <div class="img-container">
+            <img src="ele.jpg" alt="elephant" style="width:100%">
+            </div>
+            <div class="img-container">
+            <img src="shrek.png" alt="Forest" style="width: 100px">
+            </div>
+            <div class="img-container">
+            <img src="ugly_dog.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+        <script>
+            function myFunction(){
+                document.getElementById('love').style.display= 'block';
+            }
+        </script>
         <script>document.getElementById('affect').innerHTML = 'my first javascript'</script>
     </body>
 </html>

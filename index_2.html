@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                background-color: white;
+            }
+            .header{
+                background-color: grey;
+                color: white;
+                padding: 15px;
+            }
+            .column{
+                float: left;
+                padding: 15px;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 75%;
+            }
+            .context{
+                width: 75%;
+            }
+            .menu li{
+                background-color: skyblue;
+                color: white;
+                margin-bottom: 8px;
+                padding: 8px;
+            }
+            .menu li:hover{
+                background-color: blue;
+            }
+            .footer{
+                margin-left: 0;
+            
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Chania</h1>
+        </div>
+
+        <div class="clearfix">
+            <div class="column menu">
+                <ul>
+                    <li>The flight</li>
+                    <li>The city</li>
+                    <li>The Island</li>
+                    <li>The food</li>
+                </ul>
+            </div> 
+
+            <div class="column context">
+                <h1>The city</h1>
+                <p>Chanian is the capital of the Chanian region on the island of crete. The city can be divided in two parts, the olg town and the modern city.</p>
+                <p>You will learn more web layout and responsive web pages in a later chapter.</p>
+            </div>
+
+            <div class="footer">
+                <h5>Footer Text</h5>
+            </div>
+        </div>
+    </body>
+</html>
