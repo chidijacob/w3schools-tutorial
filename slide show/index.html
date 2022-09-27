@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slide show</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/4</div>
+                <img src="flower_1.jfif" alt="flower" style="width: 100%">
+                <div class="text">caption text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2/4</div>
+                <img src="flower_2.jfif" alt="flower" style="width: 100%;">
+                <div class="text">caption two</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3/4</div>
+                <img src="flower_3.jfif" alt="flower" style="width: 100%;">
+                <div class="text">caption three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4/4</div>
+                <img src="flower_4.jfif" alt="flower" style="width: 100%;">
+                <div class="text">caption four</div>
+            </div>
+            
+            <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a href="#" class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
