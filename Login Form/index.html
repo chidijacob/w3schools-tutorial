@@ -5,30 +5,35 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-                <img src="img_1.png" alt="avatar" class="avatar">
-            </div>
+        <button id="myButton" onclick="document.getElementById('theModal').style.display='block'">Login</button>
+        <div id="theModal">
+            <form action="action_page.php" method="post">
+                <span onclick="document.getElementById('theModal').style.display='none'" class="close" title="close Modal">&times;</span>
 
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter username" name="uname" required>
+                <div class="imgcontainer">
+                    <img src="img_1.png" alt="avatar" class="avatar">
+                </div>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter password" name="psw" required>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter password" name="psw" required>
+                    
+                    <button type="submit">Login</button>
                 
-                <button type="submit">Login</button>
-            
-                <label>
-                    <input type="checkbox" checked="checked" name="remember">Remember me
-                </label>
-            </div>
-            <div class="container" style="background-color: #f1f1f1;">
-                <button type="button" class="cancelbtn">cancel</button>
-                <span class="psw">Forget <a href="#">password?</a></span>
-            </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">Remember me
+                    </label>
+                </div>
+                <div class="container" style="background-color: #f1f1f1;">
+                    <button type="button" class="cancelbtn" onclick="document.getElementById('theModal').style.display='none'">cancel</button>
+                    <span class="psw">Forget <a href="#">password?</a></span>
+                </div>
 
-        </form>
+            </form>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
